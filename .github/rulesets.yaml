@@ -1,0 +1,40 @@
+rulesets:
+  commits:
+    message-matches-n:
+      params:
+        count: 1
+        patterns:
+          - '!(feature|bug|removal|deprecation)\s+\* \*\*[a-zA-Z0-9]+\*\*\s+[a-zA-Z0-9`]+'
+          - '!no-release-note'
+      range: once
+      error: |
+        At least one commit note must have a valid label. Any commit with a label
+        other than !no-release-note must also have a valid release note at the end
+        of the commit message.
+
+        Valid labels are:
+          !feature
+          !bug
+          !deprecation
+          !removal
+          !no-release-note
+
+        A commit with a valid label and release note may look like this:
+
+          ...
+
+          !feature
+
+          * **Added a new feature**
+
+            A brief description of the changes made.
+
+        A commit with the !no-release-note may look like this:
+
+          ...
+
+          !no-release-note
+    message-matches:
+      params:
+        pattern: '!no-release-note'
+      range: once

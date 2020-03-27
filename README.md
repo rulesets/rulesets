@@ -1,6 +1,6 @@
 # Rulesets action
 
-Validate pull requests and commits against a list of rules.
+Validate GitHub event payloads against a list of rules.
 
 
 ## Contents
@@ -19,8 +19,8 @@ It's important to understand a few terms before getting started with the Ruleset
 
 - `event`
 
-  The name of a GitHub event that triggers a workflow run. [View events that trigger workflows]
-  (https://help.github.com/en/actions/reference/events-that-trigger-workflows)
+  The name of a GitHub event that triggers a workflow run. 
+  [View events that trigger workflows](https://help.github.com/en/actions/reference/events-that-trigger-workflows)
 
 - `payload`
 

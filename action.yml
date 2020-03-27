@@ -1,0 +1,17 @@
+name: Rulesets
+description: Validate GitHub event payloads against a set of rules
+author: Tom Beech
+inputs:
+  rulesets:
+    description: Path to the rulesets file
+    required: false
+    default: .github/rulesets.yaml
+  token:
+    description: Github auth token
+    required: true
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: 'check'  
+  color: 'yellow'

@@ -1,0 +1,37 @@
+{
+  "name": "commit-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1",
+    "@octokit/rest": "^17.1.0",
+    "ansi-colors": "^4.1.1",
+    "chalk": "^3.0.0",
+    "colors": "^1.4.0",
+    "dedent": "^0.7.0",
+    "js-yaml": "^3.13.1",
+    "pretty-print": "^2.0.0",
+    "strip-indent": "^3.0.0",
+    "ts-dedent": "^1.1.1",
+    "word-wrap": "^1.2.3"
+  },
+  "devDependencies": {
+    "@types/dedent": "^0.7.0",
+    "@types/js-yaml": "^3.12.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beechtom/commit-check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beechtom/commit-check/issues"
+  },
+  "homepage": "https://github.com/beechtom/commit-check#readme"
+}
